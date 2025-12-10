@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Featured Projects - Avilenne Lara</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="img/avi brand logo.svg" />
+  <style>
+    @font-face {
+      font-family: 'Awesome';
+      src: url('fonts/awesome-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Awesome';
+      src: url('fonts/awesome-medium.otf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Freight Text Pro Semibold';
+      src: url('fonts/fonnts.com-Freight-Text-Pro-Semibold-.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Manrope-Medium';
+      src: url('fonts/Manrope-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    :root {
+      --bg: #f5f5f7;
+      --bg-elevated: #ffffff;
+      --bg-gradient-start: #ffffff;
+      --bg-gradient-end: #f5f5f7;
+      --border-subtle: rgba(0, 0, 0, 0);
+      --text-main: #2f332f;
+      --text-muted: #7a7a80;
+      --accent: #0071e3;
+      --accent-soft: rgba(0, 113, 227, 0.08);
+      --nav-bg: rgba(245, 245, 247, 0.55);
+      --nav-bg-scrolled: rgba(245, 245, 247, 0.75);
+      --card-bg-start: rgba(255, 255, 255, 0.95);
+      --card-bg-end: rgba(250, 250, 252, 0.98);
+      --case-card-bg-start: #ffffff;
+      --case-card-bg-end: #f7f7fa;
+      --case-visual-bg-start: #e5f1ff;
+      --case-visual-bg-end: #f5f5f7;
+      --logo-bg: rgba(255, 255, 255, 0.9);
+      --pill-bg: rgba(230, 230, 235, 0.9);
+      --shadow-sm: 0 0 0 1px rgba(255, 255, 255, 0.7), 0 6px 12px rgba(0, 0, 0, 0.12);
+      --shadow-md: 0 14px 40px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.03);
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --transition-fast: 180ms ease-out;
+      --case1-accent: #E57714;
+      --case1-accent-soft: rgba(229, 119, 20, 0.15);
+      --case2-accent: #c7cdd6;
+      --case2-accent-soft: rgba(199, 205, 214, 0.3);
+      --case3-accent: #e67e80;
+      --case3-accent-soft: rgba(230, 126, 128, 0.15);
+    }
+
+    body.dark-mode {
+      --bg: #0a0a0f;
+      --bg-elevated: #1a1a24;
+      --bg-gradient-start: #1a1a24;
+      --bg-gradient-end: #0a0a0f;
+      --text-main: #e8e8ed;
+      --text-muted: #9a9aa5;
+      --accent: #4a9eff;
+      --accent-soft: rgba(74, 158, 255, 0.15);
+      --nav-bg: rgba(10, 10, 15, 0.55);
+      --nav-bg-scrolled: rgba(10, 10, 15, 0.75);
+      --card-bg-start: rgba(26, 26, 36, 0.95);
+      --card-bg-end: rgba(20, 20, 30, 0.98);
+      --case-card-bg-start: #1a1a24;
+      --case-card-bg-end: #12121a;
+      --case-visual-bg-start: #1e2a3f;
+      --case-visual-bg-end: #0f1419;
+      --logo-bg: rgba(26, 26, 36, 0.9);
+      --pill-bg: rgba(26, 26, 36, 0.9);
+      --shadow-sm: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 6px 12px rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 14px 40px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      cursor: none !important;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      font-family: "Manrope-Medium", system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at top, var(--bg-gradient-start) 0, var(--bg-gradient-end) 52%);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+      padding-top: 72px;
+      padding-bottom: 0;
+      transition: background 0.3s ease, color 0.3s ease, background-image 0.3s ease;
+    }
+
+    body:not(.dark-mode) {
+      background-image: 
+        url('textures/paper-texture-light.png'),
+        radial-gradient(circle at top, var(--bg-gradient-start) 0, var(--bg-gradient-end) 52%);
+      background-repeat: repeat, no-repeat;
+      background-size: 400px 400px, 100% 100%;
+      background-position: 0 0, center;
+    }
+
+    body.dark-mode {
+      background-image: radial-gradient(circle at top, var(--bg-gradient-start) 0, var(--bg-gradient-end) 52%);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    body.transitioning {
+      overflow: hidden;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Freight Text Pro Semibold', serif;
+      font-weight: 600;
+    }
+
+    .custom-cursor {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      border-radius: 9999px;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      background: #ffffff;
+      mix-blend-mode: difference;
+      will-change: transform;
+    }
+
+    body.hovering-link .custom-cursor {
+      transform: translate(-50%, -50%) scale(1.3);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .work-hero {
+      padding: clamp(80px, 12vw, 160px) 0 60px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .work-hero h1 {
+      font-size: clamp(48px, 6vw, 76px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      color: var(--text-main);
+    }
+
+    .work-hero p {
+      max-width: 60ch;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      padding: 24px 48px;
+      pointer-events: none;
+      transition: all 0.35s ease;
+    }
+
+    .nav__inner {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      padding-bottom: 16px;
+      pointer-events: auto;
+      background: transparent;
+      transition: all 0.35s ease;
+    }
+
+    body.dark-mode .nav__inner {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .nav.nav--floating {
+      top: 0;
+    }
+
+    .nav.nav--floating .nav__inner {
+      max-width: 760px;
+      padding: 10px 24px;
+      border-bottom: none;
+      border-radius: 999px;
+      background: rgba(230, 230, 235, 0.9);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
+    }
+
+    body.dark-mode .nav.nav--floating .nav__inner {
+      background: rgba(20, 20, 25, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-left,
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      transition: gap 0.25s ease;
+    }
+
+    .nav-center {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      transition: gap 0.25s ease;
+    }
+
+    .nav.nav--floating .nav-left,
+    .nav.nav--floating .nav-right {
+      gap: 16px;
+    }
+
+    .nav.nav--floating .nav-center {
+      gap: 16px;
+    }
+
+    .nav.nav--floating .nav-left {
+      padding-right: 20px;
+      margin-right: 16px;
+      border-right: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    body.dark-mode .nav.nav--floating .nav-left {
+      border-right-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .brand-logo-link {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .brand-logo {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-link-group {
+      display: flex;
+      gap: 24px;
+      font-size: 15px;
+      color: var(--text-main);
+      opacity: 1;
+    }
+
+    .nav-link {
+      font-family: "Manrope-Medium", system-ui, sans-serif;
+      position: relative;
+      padding: 4px 0;
+      cursor: pointer;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      border-radius: 999px;
+      background: #c92380;
+      transition: width var(--transition-fast);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-link.nav-link--primary {
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: #c92380;
+      color: var(--bg-elevated);
+      font-size: 14px;
+      transition: opacity var(--transition-fast), background var(--transition-fast);
+    }
+
+    .nav-link.nav-link--primary:hover {
+      opacity: 0.85;
+      background: #b01e6f;
+    }
+
+    .nav-link.nav-link--primary::after {
+      display: none;
+    }
+
+    #case-studies {
+      width: 100%;
+      padding: 80px 0;
+      background: transparent;
+    }
+
+    .case-studies-container {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .case-studies-heading {
+      font-family: 'Freight Text Pro Semibold', serif;
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+
+    .case-gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 70px;
+      width: 100%;
+    }
+
+    .case-card {
+      background: var(--bg-elevated);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      position: relative;
+      will-change: transform;
+      transform: translateZ(0);
+    }
+
+    .case-visual {
+      width: 100%;
+      aspect-ratio: 20 / 7;
+      overflow: hidden;
+      position: relative;
+      background: radial-gradient(circle at top left, var(--case-visual-bg-start), var(--case-visual-bg-end));
+      transform: translateZ(0);
+    }
+
+    .case-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      will-change: transform;
+      transform: translateZ(0);
+    }
+
+    .case-content {
+      padding: 18px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .case-title {
+      font-family: 'Freight Text Pro Semibold', serif;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      color: var(--text-main);
+      margin: 0;
+    }
+
+    .case-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .case-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+    }
+
+    .case-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .case-tag {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .case-study-label {
+      font-size: 14px;
+      color: var(--accent);
+      font-weight: 500;
+      opacity: 0;
+      transform: translateX(-8px) translateZ(0);
+      will-change: transform, opacity;
+      pointer-events: none;
+    }
+
+    .case-card--giveback .case-tag {
+      background: var(--case1-accent-soft);
+      color: var(--case1-accent);
+    }
+
+    .case-card--giveback .case-study-label {
+      color: var(--case1-accent);
+    }
+
+    .case-card--aviary .case-tag {
+      background: var(--case2-accent-soft);
+      color: #8a8f98;
+    }
+
+    .case-card--aviary .case-study-label {
+      color: #8a8f98;
+    }
+
+    body.dark-mode .case-card--aviary .case-tag,
+    body.dark-mode .case-card--aviary .case-study-label {
+      color: #b8bcc5;
+    }
+
+    .case-card--allan .case-tag {
+      background: var(--case3-accent-soft);
+      color: var(--case3-accent);
+    }
+
+    .case-card--allan .case-study-label {
+      color: var(--case3-accent);
+    }
+
+    @media (min-width: 768px) {
+      .case-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+
+      .case-visual {
+        aspect-ratio: 16 / 7;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .case-gallery {
+        grid-template-columns: 1fr;
+        gap: 70px;
+      }
+
+      .case-visual {
+        aspect-ratio: 20 / 7;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .case-gallery {
+        gap: 40px;
+      }
+
+      .case-visual {
+        aspect-ratio: 16 / 7;
+      }
+
+      .case-content {
+        padding: 18px 20px;
+      }
+
+      .case-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+    }
+
+    footer {
+      padding-top: 32px;
+      margin-top: 48px;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 220px;
+    }
+
+    .footer-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 8px 0 8px;
+    }
+
+    .footer-heading {
+      font-family: 'Freight Text Pro Semibold', serif;
+      font-size: clamp(30px, 3.2vw, 38px);
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      max-width: 8ch;
+    }
+
+    .footer-note {
+      font-size: 13px;
+      color: var(--text-muted);
+      max-width: 26ch;
+    }
+
+    .footer-image-wrap {
+      flex: 1.2;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      overflow: visible;
+    }
+
+    .footer-image {
+      width: 100%;
+      max-width: 420px;
+      transform: translateX(8%);
+      filter: drop-shadow(0 26px 60px rgba(0, 0, 0, 0.22));
+    }
+
+    .fixed-footer-overlay {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 70px;
+      z-index: 999;
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      mask-image: linear-gradient(
+        to top,
+        rgba(245, 245, 247, 0.15) 0%,
+        rgba(245, 245, 247, 0.1) 25%,
+        rgba(245, 245, 247, 0.06) 50%,
+        rgba(245, 245, 247, 0.03) 75%,
+        rgba(245, 245, 247, 0) 100%
+      );
+      pointer-events: none;
+      transition: background 0.3s ease;
+    }
+
+    body.dark-mode .fixed-footer-overlay {
+      background: linear-gradient(
+        to top,
+        rgba(26, 26, 36, 0.15) 0%,
+        rgba(26, 26, 36, 0.1) 25%,
+        rgba(26, 26, 36, 0.06) 50%,
+        rgba(26, 26, 36, 0.03) 75%,
+        rgba(26, 26, 36, 0) 100%
+      );
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        padding: 0 16px;
+      }
+
+      .nav-right {
+        gap: 12px;
+      }
+
+      .nav-right .nav-link-group {
+        display: none;
+      }
+
+      .page {
+        padding-inline: 16px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+
+      .footer-image-wrap {
+        justify-content: flex-start;
+      }
+
+      .footer-image {
+        transform: translateX(0);
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav-right {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-cursor"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <div class="nav-left">
+        <a href="/" class="brand-logo-link">
+          <img src="img/avi brand logo.svg" alt="Avi logo" class="brand-logo" />
+        </a>
+      </div>
+      <nav class="nav-center nav-link-group">
+        <a class="nav-link active" href="work.html" aria-current="page">Work</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="playground.html" id="playground-link">Playground</a>
+        <a class="nav-link" href="file:///Users/avi/Downloads/Avilenne%20Lara%20resume%202025-2026.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      </nav>
+      <div class="nav-right">
+        <a class="nav-link nav-link--primary" href="index.html#contact" data-scroll>
+          Contact
+        </a>
+        <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" style="display: none;" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page">
+      <section class="work-hero">
+        <h1>Featured projects</h1>
+        <p>
+          A focused showcase of the case studies that have shaped my practice. Each project here includes the story, strategy, and craft behind the visual systems, service touchpoints, and spatial moments I build for people and teams.
+        </p>
+      </section>
+    </div>
+
+    <section id="case-studies">
+      <div class="case-studies-container">
+        <div class="case-gallery">
+          <article class="case-card case-card--giveback" data-case-study="case-study-1.html">
+            <div class="case-visual">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='675' viewBox='0 0 1200 675'><defs><linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23e5f1ff'/><stop offset='100%' stop-color='%23cce5ff'/></linearGradient></defs><rect width='1200' height='675' fill='url(%23grad1)'/><rect x='200' y='150' width='800' height='375' rx='24' fill='%23ffffff' opacity='0.9'/><rect x='250' y='200' width='500' height='20' rx='10' fill='%230071e3' opacity='0.3'/><rect x='250' y='240' width='400' height='20' rx='10' fill='%230071e3' opacity='0.2'/><rect x='250' y='280' width='450' height='20' rx='10' fill='%230071e3' opacity='0.2'/><circle cx='900' cy='300' r='60' fill='%230071e3' opacity='0.15'/></svg>" alt="The Giveback donation kiosk" />
+            </div>
+            <div class="case-content">
+              <h3 class="case-title">The Giveback – Partners In Health Donation Kiosk</h3>
+              <p class="case-desc">
+                A donation kiosk concept for Partners In Health that turns busy commuters into confident donors at Toronto's Union Station.
+              </p>
+              <div class="case-footer">
+                <div class="case-tags">
+                  <span class="case-tag">Research</span>
+                  <span class="case-tag">Interaction</span>
+                  <span class="case-tag">UI</span>
+                  <span class="case-tag">Service</span>
+                </div>
+                <span class="case-study-label">Case study →</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card case-card--aviary" data-case-study="case-study-2.html">
+            <div class="case-visual">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='675' viewBox='0 0 1200 675'><defs><linearGradient id='grad2' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23f5f6f8'/><stop offset='100%' stop-color='%23e5e7eb'/></linearGradient></defs><rect width='1200' height='675' fill='url(%23grad2)'/><rect x='150' y='120' width='900' height='435' rx='24' fill='%23ffffff' opacity='0.95'/><rect x='200' y='180' width='600' height='15' rx='7.5' fill='%23cfd4db' opacity='0.4'/><rect x='200' y='220' width='500' height='15' rx='7.5' fill='%23cfd4db' opacity='0.3'/><rect x='200' y='260' width='550' height='15' rx='7.5' fill='%23cfd4db' opacity='0.3'/><rect x='200' y='320' width='300' height='80' rx='12' fill='%23cfd4db' opacity='0.2'/></svg>" alt="The Aviary" />
+            </div>
+            <div class="case-content">
+              <h3 class="case-title">The Aviary</h3>
+              <p class="case-desc">
+                A web-based AR escape room set inside a hand-drawn 360° studio, built with A-Frame and custom illustration.
+              </p>
+              <div class="case-footer">
+                <div class="case-tags">
+                  <span class="case-tag">AR</span>
+                  <span class="case-tag">WebXR</span>
+                  <span class="case-tag">Illustration</span>
+                  <span class="case-tag">Development</span>
+                </div>
+                <span class="case-study-label">Case study →</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card case-card--allan" data-case-study="case-study-3.html">
+            <div class="case-visual">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='675' viewBox='0 0 1200 675'><defs><linearGradient id='grad3' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23fce5e5'/><stop offset='100%' stop-color='%23f8d0d1'/></linearGradient></defs><rect width='1200' height='675' fill='url(%23grad3)'/><rect x='180' y='100' width='840' height='475' rx='24' fill='%23ffffff' opacity='0.92'/><rect x='230' y='160' width='700' height='18' rx='9' fill='%23e67e80' opacity='0.35'/><rect x='230' y='200' width='600' height='18' rx='9' fill='%23e67e80' opacity='0.25'/><rect x='230' y='240' width='650' height='18' rx='9' fill='%23e67e80' opacity='0.25'/><rect x='230' y='300' width='200' height='120' rx='16' fill='%23e67e80' opacity='0.15'/><rect x='460' y='300' width='200' height='120' rx='16' fill='%23e67e80' opacity='0.15'/></svg>" alt="Allan Gardens Wayfinding" />
+            </div>
+            <div class="case-content">
+              <h3 class="case-title">Allan Gardens Wayfinding</h3>
+              <p class="case-desc">
+                A parking-lot wayfinding system for a historic conservatory, connecting circulation diagrams, signage, and visitor comfort.
+              </p>
+              <div class="case-footer">
+                <div class="case-tags">
+                  <span class="case-tag">Wayfinding</span>
+                  <span class="case-tag">Information Architecture</span>
+                  <span class="case-tag">Spatial Design</span>
+                </div>
+                <span class="case-study-label">Case study →</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="page">
+      <section id="contact" style="height: 1px;"></section>
+      <footer>
+        <div class="footer-inner">
+          <div class="footer-text">
+            <h2 class="footer-heading">Let’s work together.</h2>
+            <p class="footer-note">
+              Send a brief, a problem, or a half-finished idea. The first step is a simple outline of what needs to feel better.
+            </p>
+          </div>
+          <div class="footer-image-wrap">
+            <img
+              class="footer-image"
+              alt="Abstract light panel mockup"
+              src="data:image/svg+xml;utf8,
+                <svg xmlns='http://www.w3.org/2000/svg' width='900' height='600' viewBox='0 0 900 600'>
+                  <defs>
+                    <linearGradient id='bg' x1='0%' y1='0%' x2='100%' y2='100%'>
+                      <stop offset='0%' stop-color='%23f5f5f7'/>
+                      <stop offset='100%' stop-color='%23e4e4ea'/>
+                    </linearGradient>
+                    <linearGradient id='panel' x1='0%' y1='0%' x2='100%' y2='100%'>
+                      <stop offset='0%' stop-color='%23ffffff'/>
+                      <stop offset='100%' stop-color='%23f1f6ff'/>
+                    </linearGradient>
+                  </defs>
+                  <rect width='900' height='600' fill='url(%23bg)' rx='80'/>
+                  <g transform='translate(140,90)'>
+                    <rect x='0' y='0' width='620' height='380' rx='48' fill='url(%23panel)' />
+                    <rect x='46' y='64' width='320' height='7' rx='3.5' fill='%23d0d3dd' opacity='0.8'/>
+                    <rect x='46' y='102' width='260' height='7' rx='3.5' fill='%23d0d3dd' opacity='0.66'/>
+                    <rect x='46' y='140' width='200' height='7' rx='3.5' fill='%23d0d3dd' opacity='0.54'/>
+                    <rect x='46' y='204' width='210' height='18' rx='9' fill='%230071e3' opacity='0.18'/>
+                    <rect x='46' y='244' width='160' height='18' rx='9' fill='%230071e3' opacity='0.10'/>
+                    <rect x='380' y='64' width='160' height='120' rx='24' fill='%23ecefff'/>
+                    <circle cx='460' cy='124' r='40' fill='%23ffffff'/>
+                    <circle cx='460' cy='124' r='20' fill='%230071e3' opacity='0.85'/>
+                  </g>
+                </svg>"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <div class="fixed-footer-overlay"></div>
+
+  <!-- GSAP & Plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Universal Page Transitions -->
+  <script src="js/page-transitions.js"></script>
+
+  <script>
+    const nav = document.getElementById('nav');
+    function handleNavbarScroll() {
+      if (window.scrollY > 80) {
+        nav.classList.add('nav--floating');
+      } else {
+        nav.classList.remove('nav--floating');
+      }
+    }
+
+    let navTicking = false;
+    window.addEventListener('scroll', () => {
+      if (!navTicking) {
+        window.requestAnimationFrame(() => {
+          handleNavbarScroll();
+          navTicking = false;
+        });
+        navTicking = true;
+      }
+    });
+
+    handleNavbarScroll();
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const sunIcon = document.querySelector('.sun-icon');
+    const moonIcon = document.querySelector('.moon-icon');
+
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+      sunIcon.style.display = 'none';
+      moonIcon.style.display = 'block';
+    }
+
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isNowDark = document.body.classList.contains('dark-mode');
+
+      if (isNowDark) {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'block';
+      } else {
+        sunIcon.style.display = 'block';
+        moonIcon.style.display = 'none';
+      }
+
+      localStorage.setItem('darkMode', isNowDark ? 'enabled' : 'disabled');
+    });
+
+    const cursor = document.querySelector('.custom-cursor');
+    let mouseX = 0;
+    let mouseY = 0;
+    let cursorX = 0;
+    let cursorY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    let rafId = null;
+    function updateCursor() {
+      const dx = mouseX - cursorX;
+      const dy = mouseY - cursorY;
+      cursorX += dx * 0.2;
+      cursorY += dy * 0.2;
+      cursor.style.left = cursorX + 'px';
+      cursor.style.top = cursorY + 'px';
+      rafId = requestAnimationFrame(updateCursor);
+    }
+
+    updateCursor();
+
+    const interactiveElements = document.querySelectorAll('a, button, .case-card, .nav-link, .dark-mode-toggle');
+    interactiveElements.forEach(element => {
+      element.addEventListener('mouseenter', () => {
+        document.body.classList.add('hovering-link');
+      });
+      element.addEventListener('mouseleave', () => {
+        document.body.classList.remove('hovering-link');
+      });
+    });
+
+    if (typeof gsap !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger);
+      const storedScrollTriggers = new Map();
+
+      document.querySelectorAll('.case-card').forEach((card, index) => {
+        const triggerId = `case-card-${index}`;
+        if (!storedScrollTriggers.has(triggerId)) {
+          const trigger = gsap.from(card, {
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 80%',
+              toggleActions: 'play none none none',
+              once: true
+            },
+            opacity: 0,
+            y: 30,
+            duration: 0.6,
+            ease: 'power2.out'
+          });
+          storedScrollTriggers.set(triggerId, trigger);
+        }
+      });
+
+      document.querySelectorAll('.case-card').forEach(card => {
+        const image = card.querySelector('.case-visual img');
+        const label = card.querySelector('.case-study-label');
+        let hoverTimeline = null;
+
+        card.addEventListener('mouseenter', () => {
+          if (hoverTimeline) hoverTimeline.kill();
+          hoverTimeline = gsap.timeline({ overwrite: true });
+          hoverTimeline.to(card, { y: -8, duration: 0.3, ease: 'power2.out' }, 0);
+          if (image) {
+            hoverTimeline.to(image, { scale: 1.08, duration: 0.4, ease: 'power2.out' }, 0);
+          }
+          if (label) {
+            hoverTimeline.to(label, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 0);
+          }
+        });
+
+        card.addEventListener('mouseleave', () => {
+          if (hoverTimeline) hoverTimeline.kill();
+          hoverTimeline = gsap.timeline({ overwrite: true });
+          hoverTimeline.to(card, { y: 0, duration: 0.3, ease: 'power2.out' }, 0);
+          if (image) {
+            hoverTimeline.to(image, { scale: 1, duration: 0.4, ease: 'power2.out' }, 0);
+          }
+          if (label) {
+            hoverTimeline.to(label, { opacity: 0, x: -8, duration: 0.25, ease: 'power2.out' }, 0);
+          }
+        });
+      });
+
+      gsap.from('.footer-heading', {
+        scrollTrigger: {
+          trigger: 'footer',
+          start: 'top 80%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        x: -50,
+        duration: 1,
+        ease: 'power3.out'
+      });
+
+      gsap.from('.footer-note', {
+        scrollTrigger: {
+          trigger: 'footer',
+          start: 'top 80%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        delay: 0.2,
+        ease: 'power3.out'
+      });
+
+      gsap.from('.footer-image', {
+        scrollTrigger: {
+          trigger: 'footer',
+          start: 'top 80%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        x: 100,
+        rotation: 5,
+        duration: 1.2,
+        delay: 0.3,
+        ease: 'power3.out'
+      });
+    }
+  </script>
+</body>
+</html>
+
